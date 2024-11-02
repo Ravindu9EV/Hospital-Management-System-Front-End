@@ -1,4 +1,4 @@
-<div class="flex-shrink-0 p-3" style="width: 280px">
+<div class="flex-shrink-0 p-3 bg-success-subtle" style="width: 280px">
   <a
     href="/"
     class="d-flex align-items-center pb-3 mb-3 link-body-emphasis text-decoration-none border-bottom"
@@ -57,16 +57,16 @@
         <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
           <li>
             <a
-              href="#"
+              [routerLink]="['/patient']"
               class="link-body-emphasis d-inline-flex text-decoration-none rounded"
-              >Overview</a
+              >Patient Manage</a
             >
           </li>
           <li>
             <a
-              href="#"
+              [routerLink]="['/appoinment']"
               class="link-body-emphasis d-inline-flex text-decoration-none rounded"
-              >Weekly</a
+              >Appoinment Manage</a
             >
           </li>
           <li>

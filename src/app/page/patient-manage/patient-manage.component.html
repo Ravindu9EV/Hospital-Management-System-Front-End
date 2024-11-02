@@ -1,1 +1,35 @@
-<p>patient-manage works!</p>
+<h1 class="bg-danger text-white text-center">Patient Manage</h1>
+
+<!-- <ol>
+  <li *ngFor="let patient of patientList">{{ patient.name }}</li>
+</ol> -->
+
+
+<table class="table table-bordered table-danger">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>NIC</th>
+        <th>Address</th>
+        <th>Blood Group</th>
+        <th>Category</th>
+        <th>Gender</th>
+        <th>Contact</th>
+        <th>Note</th>
+        <th>Age</th>
+        <th>Allergies</th>
+    </tr>
+    <tr *ngFor="let patient of patientList">
+        <td>{{patient.id}}</td>
+        <td>{{patient.name}}</td>
+        <td>{{patient.nic}}</td>
+        <td>{{patient.address}}</td>
+        <td>{{patient.bloodGroup}}</td>
+        <td>{{patient.category}}</td>
+        <td>{{patient.gender}}</td>
+        <td>{{patient.contact}}</td>
+        <td>{{patient.note}}</td>
+        <td>{{patient.age}}</td>
+        <td>{{patient.allergies}}</td>
+    </tr>
+</table>
